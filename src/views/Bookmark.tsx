@@ -1,11 +1,5 @@
-import React from 'react'
-
-const BookMarkPage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+function BookmarkPage() {
+  return <div className="page">BookmarkPage</div>;
 }
 
-export default BookMarkPage
+export default BookmarkPage;

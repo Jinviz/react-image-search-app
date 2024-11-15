@@ -25,5 +25,5 @@ export {
   DialogTitle,
   DialogDescription,
 } from './dialog'
-
+export { SearchBar } from './search-bar'
 export { Avatar, AvatarImage, AvatarFallback } from './avatar'
