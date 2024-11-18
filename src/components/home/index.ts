@@ -1,1 +1,1 @@
-export { ImageCard } from './image-card/ImageCard'
+export { ImageCard } from "./image-card/ImageCard";

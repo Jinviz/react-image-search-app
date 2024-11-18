@@ -1,29 +1,29 @@
-// UI 모듈
-export { Separator } from './separator'
-export { Skeleton } from './skeleton'
-export { Button, buttonVariants } from './button'
-export { Input } from './input'
+/** BASIC UI 모듈 */
+export { Avatar, AvatarImage, AvatarFallback } from "./avatar";
+export { Button, buttonVariants } from "./button";
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "./card";
 export {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from './pagination'
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './card'
+    Dialog,
+    DialogPortal,
+    DialogOverlay,
+    DialogClose,
+    DialogTrigger,
+    DialogContent,
+    DialogHeader,
+    DialogFooter,
+    DialogTitle,
+    DialogDescription,
+} from "./dialog";
+export { Input } from "./input";
 export {
-  Dialog,
-  DialogPortal,
-  DialogOverlay,
-  DialogClose,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogFooter,
-  DialogTitle,
-  DialogDescription,
-} from './dialog'
-export { SearchBar } from './search-bar'
-export { Avatar, AvatarImage, AvatarFallback } from './avatar'
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "./pagination";
+export { Separator } from "./separator";
+export { SearchBar } from "./search-bar";
+export { Skeleton } from "./skeleton";
