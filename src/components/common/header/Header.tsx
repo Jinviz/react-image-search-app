@@ -4,35 +4,35 @@ import { BookMarked } from "lucide-react";
 import styles from "./header.module.scss";
 
 function Header() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <header className={styles.header}>
-            <div className={styles[`header__logo-box`]}>
-                <Link to={"/"}>
-                    <img src="/assets/logo.svg" alt="스나이퍼 팩토리 로고" className={styles[`header__logo-box__logo`]} />
-                </Link>
-            </div>
-            <div className={styles[`header__user-box`]}>
-                {/* 북마크 버튼 */}
-                <Button variant={"secondary"} onClick={() => navigate("/bookmark")}>
-                    <BookMarked />
-                    북마크
-                </Button>
-                <Separator orientation="vertical" className="h-10 mx-1" />
-                {/* 아바타  */}
-                <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                    <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-                {/* 유저 닉네임 & 이메일 */}
-                <div className="flex items-center gap-1">
-                    <small className="text-sm font-medium leading-none">Jinviz</small>&middot;
-                    <small className="text-sm font-medium leading-none">rlawlsdn9583@gmail.com</small>
-                </div>
-            </div>
-        </header>
-    );
+  return (
+    <header className={styles.header}>
+      <div className={styles[`header__logo-box`]}>
+        <Link to={"/"}>
+          <img src="/assets/Text.svg" alt="스나이퍼 팩토리 로고" className={styles[`header__logo-box__logo`]} />
+        </Link>
+      </div>
+      <div className={styles[`header__user-box`]}>
+        {/* 북마크 버튼 */}
+        <Button variant={"secondary"} onClick={() => navigate("/bookmark")}>
+          <BookMarked />
+          북마크
+        </Button>
+        <Separator orientation="vertical" className="h-10 mx-1" />
+        {/* 아바타  */}
+        <Avatar>
+          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        {/* 유저 닉네임 & 이메일 */}
+        <div className="flex items-center gap-1">
+          <small className="text-sm font-medium leading-none">Jinviz</small>&middot;
+          <small className="text-sm font-medium leading-none">rlawlsdn9583@gmail.com</small>
+        </div>
+      </div>
+    </header>
+  );
 }
 
 export { Header };
