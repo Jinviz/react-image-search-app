@@ -14,6 +14,7 @@ function HomePage() {
   const [page, setPage] = useAtom(pageAtom);
   const [inputValue, setInputValue] = useState<string>("");
   const [images, setImages] = useState([]); // 사진 데이터를 저장할 상태
+  // @ts-ignore
   const [totalPages, setTotalPages] = useState<number>(1); // 전체 페이지
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

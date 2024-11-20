@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-picker-deployment
+  labels:
+    app: image-picker-app
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: image-picker-app
+  template:
+    metadata:
+      labels:
+        app: image-picker-app
+    spec:
+      containers:
+      - name: image-picker-container
+        image: jinviz/image-picker-app:latest
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: "200m"
+            memory: "256Mi"
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
